@@ -51,6 +51,8 @@ async def on_message(message):
                 await message.channel.send(f'¡Casi! El número era {numero}.')
         except:
             await message.channel.send("¡Ups! Se acabó el tiempo para adivinar.")
+    elif message.content.startswith("$ayuda"):
+        await message.channel.send("$adios $hola $chiste $moneda $adivina")
 
     
 
